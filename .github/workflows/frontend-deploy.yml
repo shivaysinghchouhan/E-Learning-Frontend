@@ -1,0 +1,62 @@
+name: Frontend CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Clone the repo
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Set up Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # Install dependencies & build React app
+    - name: Build React App
+      run: |
+        npm ci
+        npm run build
+
+    # Deploy to EC2
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_KEY }}
+        script: |
+          rm -rf /home/ubuntu/react-app/*
+          exit
+
+    # Copy build files to EC2
+    - name: Copy React build to EC2
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_KEY }}
+        source: build/*
+        target: /home/ubuntu/react-app/
+
+    # Start Frontend Docker container
+    - name: Start Docker Container
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_KEY }}
+        script: |
+          cd /home/ubuntu/react-app
+          docker stop e-learning-frontend || true
+          docker rm e-learning-frontend || true
+          docker build -t e-learning-frontend .
+          docker run -d -p 3000:80 --name e-learning-frontend e-learning-frontend
