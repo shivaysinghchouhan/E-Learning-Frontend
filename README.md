@@ -1,75 +1,42 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# E-Learning Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Author:** Shivraj Singh Chouhan 
+**GitHub:** [shivaysinghchouhan](https://github.com/shivaysinghchouhan/Hotel-Rating-Microservice.git) 
 
-## Available Scripts
+**Project Type:** Frontend for E-Learning Platform  
+**Technology Stack:** React.js, Redux (optional), JWT Authentication, HTML5, CSS3, Responsive Design  
 
-In the project directory, you can run:
+**Description:**  
+This project is the **frontend application for an interactive E-Learning platform** designed to help users learn coding efficiently. It delivers tutorials, projects, and course content in a seamless user interface.  
 
-### `npm start`
+The frontend is **securely integrated with the backend** via **JWT authentication**, ensuring secure user sessions. The platform is fully responsive and optimized for all devices, providing an excellent user experience across desktops, tablets, and mobiles.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- User registration and login with **JWT authentication**  
+- Browse and search courses  
+- View course details, lessons, and projects  
+- Purchase courses and subscriptions (integrated with backend)  
+- Interactive UI with responsive design for all devices  
+- Integration with backend APIs for seamless functionality  
+- Loading states and error handling for better UX  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+- **React.js** for frontend development  
+- **HTML5, CSS3, JavaScript (ES6+)**  
+- **Axios / Fetch API** for HTTP requests  
+- **JWT** for authentication integration  
+- **React Router** for navigation  
+- **Redux / Context API** (if used for state management)  
+- **Responsive design** using CSS Flexbox/Grid or frameworks like Bootstrap  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps to Run Locally
+1. Clone the repository:
+   ```bash
+   https://github.com/shivaysinghchouhan/Hotel-Rating-Microservice.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# E-Learning
-An E-Learning platform to simplify coding skills with interactive tutorials and projects
->>>>>>> 3279347295f0c48db2dd2436cbac83bcb2f7d825
