@@ -1,7 +1,7 @@
 # E-Learning Frontend
 
 **Author:** Shivraj Singh Chouhan 
-**GitHub:** [shivaysinghchouhan](https://github.com/shivaysinghchouhan/Hotel-Rating-Microservice.git) 
+**GitHub:** [shivaysinghchouhan](https://github.com/shivaysinghchouhan/E-Learning-Frontend.git) 
 
 **Project Type:** Frontend for E-Learning Platform  
 **Technology Stack:** React.js, Redux (optional), JWT Authentication, HTML5, CSS3, Responsive Design  
@@ -38,5 +38,5 @@ The frontend is **securely integrated with the backend** via **JWT authenticatio
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   https://github.com/shivaysinghchouhan/Hotel-Rating-Microservice.git
+   https://github.com/shivaysinghchouhan/E-Learning-Frontend.git
 
